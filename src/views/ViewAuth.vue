@@ -18,7 +18,7 @@ const credentials = reactive({
 const onSubmit = () => {
   if (!credentials.email || !credentials.password) {
     alert("請輸入電子郵件或是密碼");
-  } else if (credentials.password.length < 6) {
+  } else if (register.value && credentials.password.length < 6) {
     alert("密碼請輸入至少6位數字或英文字母");
     return;
   } else {
