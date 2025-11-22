@@ -54,9 +54,7 @@ export const useStoreAuth = defineStore("storeAuth", {
         .catch((error) => {
           console.log("error.message", error.message);
           if (error.code === "auth/invalid-credential") {
-            alert("帳號或密碼錯誤");
-          } else {
-            alert("登入失敗：" + error.message);
+            alert("帳號或密碼錯誤（如尚未註冊帳號，請先註冊）");
           }
         });
     },
