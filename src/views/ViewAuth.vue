@@ -7,7 +7,7 @@ const storeAuth = useStoreAuth();
 const register = ref(false);
 
 const formTitle = computed(() => {
-  return register.value ? "註冊會員" : "登入";
+  return register.value ? "註冊" : "登入";
 });
 
 const credentials = reactive({
